@@ -29,7 +29,7 @@ $("#door2").click(function(){
 
 $("#access").click(function(){
   var password = document.getElementById('password').value;
-  if (password == "rawr") {
+  if (password == "red") {
     $("#cipher").hide();
     $("#source").show();
   }
