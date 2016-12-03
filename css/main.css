@@ -1,0 +1,36 @@
+body {
+    font-family: Calibri, sans-serif;
+    margin: 0;
+}
+h1 {
+    margin: 0;
+}
+
+.all-secs {
+  height: 100vh;
+  padding: 40px;
+}
+
+#introduction1 {
+    background: #CC3910;
+    color: #fff;
+}
+#cipher {
+    background: #F1F2C0;
+    color: #000;
+}
+#pw:hover {
+  background-color: yellow;
+}
+#source {
+    background: #332F29;
+    color: #fff;
+}
+#map1 {
+    background: #8FA68E;
+    color: #fff;
+}
+#map2 {
+    background: #8FA68B;
+    color: #fff;
+}
