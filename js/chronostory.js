@@ -17,12 +17,17 @@ $("#next").click(function(){
     $("#choice").show();
 });
 
-$("#door1").click(function(){
+$("#next2").click(function(){
+    $("#exposition2").hide();
+    $("#choice2").show();
+});
+
+$(".door1").click(function(){
     $("#choice").hide();
     $("#cipher").show();
 });
 
-$("#door2").click(function(){
+$(".door2").click(function(){
     $("#choice").hide();
     $("#source").show();
 });
@@ -59,6 +64,19 @@ $("#mapaccess2").click(function(){
   }
 });
 
+$(function() {
+    $("#city1")
+        .mouseover(function() {
+            $(this).attr("src", "images/city2.jpg");
+        })
+        .mouseout(function() {
+           $(this).attr("src", "images/city1.jpg");
+        });
+});
 
+$("#city1").click(function() {
+  $("#finale1").hide();
+  $("#exposition2").show();
+});
 
 });
