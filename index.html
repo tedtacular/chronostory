@@ -3,21 +3,24 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
     <title>Chronostory</title>
 
   <link href="css/main.css" rel="stylesheet">
   <script src="js/jquery.min.js"></script>
   <script src="js/chronostory.js"></script>
+  <link rel="stylesheet"  href="https://unpkg.com/leaflet@1.0.1/dist/leaflet.css">
+  <script src="https://unpkg.com/leaflet@1.0.1/dist/leaflet.js"></script>
 </head>
 
-/* THE PASSWORD IS "warp" */
+<!-- THE PASSWORD IS "WARP" -->
 
 <body>
 
 <section id="exposition" class="all-secs">
   <p>No it's not. You are no one here.</p>
+  <p>And here is where you'll stay until you've learned to be no one.</p>
   <button id="next">Next</button>
 </section>
 
@@ -31,18 +34,26 @@
 </section>
 
 <section id="choice" class="all-secs">
-  Choose a door.
-  <button id="door1">Next</button>
-  <button id="door2">Next</button>
+  <p>Choose it a door.</p>
+  <p>It doesn't matter which one.</p>
+  <p>You'll be back.</p>
+  <button id="door1">Door 1</button>
+  <button id="door2">Door 2</button>
 </section>
 
 <section id="cipher" class="all-secs">
-  <p>01110111 01100001 01101011 01100101 00100000 01110101 01110000 01110111 01100001 01101011 01100101 00100000 01110101 01110000 01110111 01100001 01101011 01100101 00100000 01110101
+  <p>01111001 01101111 01110101 00100000 01101110 01100101 01110110 01100101 01110010 00100000 01110011 01101000 01101111 01110101 01101100 01100100 00100000 01101000 01100001 01110110 01100101 00100000 01100100 01101111 01101110 01100101 00100000 01110111 01101000 01100001 01110100 00100000 01111001 01101111 01110101 00100000 01100100 01101001 01100100
   </p>
+
   <p>
-  01110000 01110111 01100001 01101011 01100101 00100000 01110101 01110000 01110111 01100001 01101011 01100101 00100000 01110101 01110000 01110111 01100001 01101011 01100101 00100000 01110101 01110000
+01100010 01101001 01101100 01101100 01101001 01101111 01101110 01110011 00100000 01101111 01100110 00100000 01110000 01100101 01101111 01110000 01101100 01100101 00100000 01101100 01101111 01110011 01110100 00100000 01110100 01101000 01100101 01101001 01110010 00100000 01101100 01101001 01110110 01100101 01110011
   </p>
-  <p><div id="pw">01110100 01101000 01100101 00100000 01110000 01100001 01110011 01110011 01110111 01101111 01110010 01100100 00100000 01101001 01110011 00100000 01110010 01100101 01100100</div></p>
+
+  <p><div id="pw">01110100 01101000 01100101 00100000 01110000 01100001 01110011 01110011 01110111 01101111 01110010 01100100 00100000 01101001 01110011 00100000 01010010 01000101 01000100 </div></p>
+
+  <p> 01100100 01101111 00100000 01111001 01101111 01110101 00100000 01100101 01110110 01100101 01101110 00100000 01100110 01100101 01100101 01101100 00100000 01100111 01110101 01101001 01101100 01110100 00111111 </p>
+
+  <p> 01111001 01101111 01110101 00100000 01100011 01100001 01101110 00100000 01110010 01101111 01110100 00100000 01101001 01101110 00100000 01110100 01101000 01101001 01110011 00100000 01101000 01100101 01101100 01101100 </p>
 
 <form name="PasswordField" action="red">
 Password:
@@ -64,11 +75,40 @@ Password:
 
 
 <section id="map1" class="all-secs">
-  <p>An apple is delicious.</p>
+  <h1> CHRONO-TERRORISM INCIDENTS </h1>
+  <script src="js/map1.json"></script>
+  <div id="firstmap"></div>
+  <script src='js/mapone.js'></script>
+  <form name="PasswordField" action="red">
+    Password:
+  <input type="password" id="mapword1" name="password">
+    <input type="button" value = "access" id="mapaccess1">
+  </form>
+
 </section>
 
 <section id="map2" class="all-secs">
-  <p>Hyuna is red.</p>
+  <h1> CASE FILES </h1>
+  <script src="js/map2.json"></script>
+  <div id="secondmap"></div>
+  <script src='js/maptwo.js'></script>
+  <form name="PasswordField" action="red">
+    Password:
+  <input type="password" id="mapword2" name="password">
+    <input type="button" value = "access" id="mapaccess2">
+    </form>
+</section>
+
+<section id="finale1" class="all-secs">
+  <h1>PRISONER DETECTED</h1>
+  <h2>RESET INITIALIZED</h2>
+
+</section>
+
+<section id="finale2" class="all-secs">
+  <h1>PRISONER DETECTED</h1>
+  <h2>RESET INITIALIZED</h2>
+
 </section>
 
 </body>

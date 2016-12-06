@@ -1,0 +1,5 @@
+places = [{"placeName":"ETH Zurich (A)","description":"prototype neurosphere stolen, March 2020","latitude":47.3763,"longitude":8.5477},
+{"placeName":"Imperial College London (W)","description":"plutonium sample stolen from maximum security research facility, October 2023","latitude":51.4988,"longitude":0.1749},
+{"placeName":"Tsinghua University (A)","description":"experimental research on worm holes hacked into, December, 2023","latitude":39.999,"longitude":116.3246},
+{"placeName":"Smithsonian Institute (K)","description":"temporal dilation device stolen, January, 2018","latitude":38.8888,"longitude":-77.026},
+{"placeName":"Large Hadron Collider (E)","description":"the cataclysm, July 2025","latitude":46.234035,"longitude":6.05245}]

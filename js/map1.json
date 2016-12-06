@@ -1,0 +1,5 @@
+incidents = [{"placeName":"Paris","description":"underwent suspended animation March 2026","latitude":48.8566,"longitude":2.3522},
+{"placeName":"Tokyo","description":"distortion loop terraformed time-space continuum of city September 2026","latitude":35.6895,"longitude":139.6917},
+{"placeName":"Mexico City","description":"consumed by liminal space bubble April 2026","latitude":19.2465,"longitude":99.1013},
+{"placeName":"Sydney","description":"TIMAEUS","latitude":33.8688,"longitude":151.2093},
+{"placeName":"Dubai","description":"rapid acceleration disintegrated premises June 2026","latitude":25.2048,"longitude":55.2708}]
