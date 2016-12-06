@@ -1,5 +1,5 @@
 $(document).ready(function(){
-/*var you = prompt("What's your name?");*/
+var you = prompt("What's your name?");
 
 $('.all-secs').hide();
 
