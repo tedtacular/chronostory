@@ -1,16 +1,22 @@
 $(document).ready(function(){
-var you = prompt("What's your name?");
+var you = prompt("What is your name?");
 
 $('.all-secs').hide();
+$('.triggers').hide();
 
 $('#exposition').show();
 
-/* - EXPOSITION TRIGGERS - */
+setTimeout(function() {
+  $("#trigger1").fadeIn();
+}, 2000);
 
-/* setTimeout(function() {
-  $("#trigger").fadeOut().empty();
+setTimeout(function() {
+  $("#trigger2").fadeIn();
+}, 3000);
+
+setTimeout(function() {
+  $("#trigger3").fadeIn();
 }, 5000);
-*/
 
 $("#next").click(function(){
     $("#exposition").hide();
@@ -24,12 +30,19 @@ $("#next2").click(function(){
 
 $(".door1").click(function(){
     $("#choice").hide();
+    $("#choice2").hide();
     $("#cipher").show();
 });
 
 $(".door2").click(function(){
     $("#choice").hide();
+    $("#choice2").hide();
     $("#source").show();
+});
+
+$("#door3").click(function(){
+    $("#choice2").hide();
+    $("#check1").show();
 });
 
 $("#access").click(function(){
@@ -65,18 +78,51 @@ $("#mapaccess2").click(function(){
 });
 
 $(function() {
-    $("#city1")
+    $("#o")
         .mouseover(function() {
-            $(this).attr("src", "images/city2.jpg");
+            $(this).attr("src", "images/rebel.png");
         })
         .mouseout(function() {
-           $(this).attr("src", "images/city1.jpg");
+           $(this).attr("src", "images/o.png");
         });
 });
 
-$("#city1").click(function() {
+$("#o").click(function() {
   $("#finale1").hide();
   $("#exposition2").show();
+});
+
+$("#hiddentower").click(function() {
+  $("#finale2").hide();
+  $("#exposition2").show();
+});
+
+$("#checkaccess1").click(function(){
+  var password = document.getElementById('checkup1').value;
+  if (password == "IMPRISON") {
+    $("#check1").hide();
+    $("#check2").show();
+  }
+});
+
+$("#checkaccess2").click(function(){
+  var password = document.getElementById('checkup2').value;
+  if (password == "LIFETIMES") {
+    $("#check2").hide();
+    $("#finalquestion").show();
+  }
+});
+
+$("#theanswer").click(function(){
+  var password = document.getElementById('last').value;
+  if (password == "NO ONE") {
+    $("#finalquestion").hide();
+    $("#ending1").show();
+  }
+  else if (password == you) {
+    $("#finalquestion").hide();
+    $("#ending2").show();
+  }
 });
 
 });

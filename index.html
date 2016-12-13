@@ -19,18 +19,19 @@
 <body>
 
 <section id="exposition" class="all-secs">
-  <p>No it's not. You are no one here.</p>
-  <p>And here is where you'll stay until you've learned to be no one.</p>
-  <button id="next">Next</button>
+  <h1>CHRONOSPHERE INITIALIZED</h1>
+  <div id="trigger1" class="triggers"><p>No it's not. You are NO ONE here.</p></div>
+  <div id="trigger2" class="triggers"><p>And here is where you'll stay until you've learned to be NO ONE.</p></div>
+  <div id="trigger3" class="triggers"><button id="next">Next</button></div>
 </section>
 
 <section id="exposition2" class="all-secs">
+  <h1>CHRONOSPHERE RESET</h1>
   <p>Welcome back. It looks like you didn't make it out.</p>
   <p>Better luck this time.</p>
   <p>Looks like it's time to choose which door to go through again.</p>
   <p>It seems that another door has opened.</p>
   <p>Don't let it give you false hope.</p>
-  <div id="loops"></div>
   <button id="next2">Next</button>
 </section>
 
@@ -52,6 +53,7 @@
 </section>
 
 <section id="cipher" class="all-secs">
+  <h1>CIPHER ROOM ACTIVATED</h1>
   <p>01111001 01101111 01110101 00100000 01101110 01100101 01110110 01100101 01110010 00100000 01110011 01101000 01101111 01110101 01101100 01100100 00100000 01101000 01100001 01110110 01100101 00100000 01100100 01101111 01101110 01100101 00100000 01110111 01101000 01100001 01110100 00100000 01111001 01101111 01110101 00100000 01100100 01101001 01100100
   </p>
 
@@ -75,7 +77,8 @@ Password:
 
 
 <section id="source" class="all-secs">
-  <h1> GET TO THE SOURCE </p>
+  <h1>CODE ROOM ACTIVATED</h1>
+  <h2> get to the source </h2>
   <form name="PasswordField" action="red">
     Password:
   <input type="password" id="password2" name="password">
@@ -112,13 +115,59 @@ Password:
 <section id="finale1" class="all-secs">
   <h1>PRISONER DETECTED</h1>
   <h2>RESET INITIALIZED</h2>
-  <img src="images/city1.jpg" alt="neon city" id="city1" >
+    <img src="images/a.png" alt="a">
+    <img src="images/t.png" alt="t">
+    <img src="images/o.png" alt="o" id="o">
+    <img src="images/n.png" alt="n">
+    <img src="images/e.png" alt="e">
+  <h3>CODE 4-A: IMPRISON</h3>
 </section>
+
 
 <section id="finale2" class="all-secs">
   <h1>PRISONER DETECTED</h1>
   <h2>RESET INITIALIZED</h2>
+      <img src="images/tower.png" alt="the tower" usemap="#towermap">
+      <map name="towermap">
+        <area shape="circle" coords="369,228,10" alt="Sun" id="hiddentower">
+      </map>
+  <h3>CODE 4-B: LIFETIMES</h3>
+</section>
 
+<section id="check1" class="all-secs">
+  <h1>RED ROOM ACCESS GRANTED</h1>
+<form name="PasswordField" action="red">
+  Why are you here? (4-A)
+<input type="password" id="checkup1" name="password">
+  <input type="button" value = "access" id="checkaccess1">
+  </form>
+</section>
+
+<section id="check2" class="all-secs">
+  <h1>VIOLET ROOM ACCESS GRANTED</h1>
+  <form name="PasswordField" action="red">
+    How long was your sentence? (4-B)
+  <input type="password" id="checkup2" name="password">
+    <input type="button" value = "access" id="checkaccess2">
+    </form>
+</section>
+
+<section id="finalquestion" class="all-secs">
+  <h1>CHRONOCORE ACCESS GRANTED</h1>
+  <h2>WHO ARE YOU?</h2>
+  <form name="PasswordField" action="red">
+    I am
+  <input type="password" id="last" name="password">
+    <input type="button" value = "..." id="theanswer">
+    </form>
+</section>
+
+<section id="ending1" class="all-secs">
+<p>Rehabilitation complete. Now sending you back to Earth. Welcome to your new life.</p>
+</section>
+
+<section id="ending2" class="all-secs">
+<p>Rehabilitation unsuccessful. Ejection from Chronosphere in 3...2...1</p>
 </section>
 
 </body>

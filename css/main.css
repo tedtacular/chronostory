@@ -11,12 +11,16 @@ h1 {
   padding: 40px;
 }
 
-#introduction1 {
-    background: #CC3910;
+#exposition, #exposition2 {
+    background: #7E827A;
     color: #fff;
 }
+#choice1, #choice2 {
+  background: #E6B098;
+  color: #000;
+}
 #cipher {
-    background: #F1F2C0;
+    background: #2F343B;
     color: #000;
 }
 #pw:hover {
@@ -31,6 +35,35 @@ h1 {
     color: #fff;
 }
 #map2 {
-    background: #8FA68B;
+    background: #C77966;
     color: #fff;
+}
+
+#firstmap { height: 500px; }
+
+#secondmap { height: 500px; }
+
+#finale1, #finale2 {
+  background: #703030;
+  color: #fff;
+}
+#finalquestion {
+    background: #1E1E20;
+    color: #fff;
+}
+#check1 {
+    background: #DC3522;
+    color: #fff;
+}
+#check2 {
+    background: #2E0927;
+    color: #fff;
+}
+#ending1 {
+    background: #F9E4AD;
+    color: #000;
+}
+#ending2 {
+    background: #979C9C;
+    color: #000;
 }
